@@ -161,6 +161,60 @@ export default function Problem() {
                       <TbCheckbox />
                       </td>
                     </tr>
+
+                    <tr>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
+                      React LazyLoad
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sky-400">
+                        <BsFileEarmarkPlayFill />
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
+                        80%
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-md text-teal-400">
+                        Easy
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 w-10 text-center text-orange-500">
+                      <TbCheckbox />
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
+                      Navigate (Imperative)
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sky-400">
+                        <BsFileEarmarkPlayFill />
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
+                        80%
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-md text-teal-400">
+                        Easy
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 w-10 text-center text-orange-500">
+                      <TbCheckbox />
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
+                      Url Parameters
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-sky-400">
+                        <BsFileEarmarkPlayFill />
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3">
+                        80%
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-md text-teal-400">
+                        Easy
+                      </td>
+                      <td className="border-t-2 border-b-2 border-gray-200 w-10 text-center text-orange-500">
+                      <TbCheckbox />
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
