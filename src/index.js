@@ -12,14 +12,17 @@ import Register from "./components/Register.js"
 import Problems from "./components/Problem.js"
 import Signout from './components/Signout.js';
 import ForgetPassword from "./components/ForgetPassword.js"
+import Problem from './components/Problem.js';
+import Home from "./components/Home.js"
 
 
 const  App = () => {
   return (
     <>
       <Header />
-      <Problems />
       <Outlet />
+      {/* <Problems /> */}
+      {/* <Outlet /> */}
       <Footer />
     </>
       
@@ -33,6 +36,10 @@ const appRoute = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
+        path: "/",
+        element: <Home />
+      },
+      {
         path: "/login",
         element: <Signin />
       },
@@ -41,16 +48,16 @@ const appRoute = createBrowserRouter([
         element: <Signout />
       },
       {
+        path: "/problems",
+        element: <Problem />
+      },
+      {
         path: "/forget-paasword",
         element: <ForgetPassword />
       },
       {
         path: "/register",
         element: <Register />
-      },
-      {
-        path: "/problems",
-        element: <Problems />
       },
       {
         path: "/footer",
