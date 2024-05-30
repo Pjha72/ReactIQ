@@ -14,6 +14,8 @@ import Signout from './components/Signout.js';
 import ForgetPassword from "./components/ForgetPassword.js"
 import Problem from './components/Problem.js';
 import Home from "./components/Home.js"
+import CheatSheet from "./components/Cheetsheet.js"
+import './assests/css/FontCss.css'
 
 
 const  App = () => {
@@ -67,6 +69,10 @@ const appRoute = createBrowserRouter([
         path: "/roadmap",
         element: <Roadmap />
       },
+      {
+        path: "/cheatsheet",
+        element: <CheatSheet />
+      }
     ]
   }
 ])

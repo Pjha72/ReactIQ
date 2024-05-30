@@ -12,10 +12,10 @@ export default function Home() {
                 Welcome To
                 <br class="hidden lg:inline-block" />
               </h1>
-              <span className="title-font sm:text-4xl text-xl mb-4 font-bold text-gray-900 font-mono hover:font-serif">
+              <span className="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900 font-amarnath">
                 ReactPrep Station
               </span>
-              <p class="mb-8 leading-relaxed text-justify text-gray-600 hover:text-gray-800 font-mono">
+              <p class="mb-8 leading-relaxed text-justify text-gray-600 hover:text-gray-800 font-amarnath">
                 At ReactPrep Station, our mission is to empower developers of
                 all levels to master React and build amazing applications.
                 Whether you're just starting out or looking to deepen your

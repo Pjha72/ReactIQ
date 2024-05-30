@@ -6,7 +6,7 @@ export default function Footer() {
     <div>
       <footer class="text-gray-400 bg-white body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a class="flex title-font font-bold items-center md:justify-start justify-center text-gray-900 font-mono">
+          <a class="flex title-font font-bold items-center md:justify-start justify-center text-gray-900">
 
           <img className="mx-auto h-16 w-22" src={logo} alt="RPS Logo" />
             <span class="ml-3 text-xl">ReactPrep Station</span>

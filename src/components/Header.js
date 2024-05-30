@@ -41,7 +41,8 @@ const Header = () => {
     { name: "Contest", href: "#", current: false },
     { name: "Discuss", href: "#", current: false },
     { name: "Interview", href: "#", current: false },
-    { name: "Explore", href: "#", current: false },
+    { name: "CheatSheet", href: "/cheatsheet", current: false },
+    { name: "Roadmap", href: "/roadmap", current: false },
   ];
 
   const userNavigation = [
@@ -56,7 +57,7 @@ const Header = () => {
   return (
     <>
       <div className="min-h-full">
-        <Disclosure as="nav" className="bg-white-800 shadow-xl">
+        <Disclosure as="nav" className="bg-white-800 shadow-xl rounded">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -77,7 +78,7 @@ const Header = () => {
                             href={item.href}
                             className={classNames(
                               item.current
-                                ? " text-white"
+                                ? " text-gray-400 hover:text-gray-900"
                                 : "text-gray-400 hover:text-gray-900",
                               "rounded-md px-3 py-2 text-md font-semibold"
                             )}
