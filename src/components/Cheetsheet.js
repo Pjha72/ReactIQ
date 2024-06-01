@@ -4,26 +4,61 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-  Transition,
 } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+
+import {CodeBlock, dracula} from "react-code-blocks"
 
 export default function Cheetsheet() {
   const [textColor, setTextColor] = useState("#000000");
   const [textColor1, setTextColor1] = useState("#000000");
+  const [textColor2, setTextColor2] = useState("#000000");
+  const [textColor3, setTextColor3] = useState("#000000");
+  const [textColor4, setTextColor4] = useState("#000000");
+  const [textColor5, setTextColor5] = useState("#000000");
+  const [textColor6, setTextColor6] = useState("#000000");
+  const [textColor7, setTextColor7] = useState("#000000");
+  const [textColor8, setTextColor8] = useState("#000000");
+  const [textColor9, setTextColor9] = useState("#000000");
 
   const handleTextColor = (e) => {
     setTextColor(textColor === "#000000" ? "#ef443a" : "#000000");
-    console.log(textColor);
   };
 
   const handleTextColor1 = (e) => {
     setTextColor1(textColor1 === "#000000" ? "#ef443a" : "#000000");
-    console.log(textColor);
+  };
+
+  const handleTextColor2 = (e) => {
+    setTextColor2(textColor2 === "#000000" ? "#ef443a" : "#000000");
+  };
+
+  const handleTextColor3 = (e) => {
+    setTextColor3(textColor3 === "#000000" ? "#ef443a" : "#000000");
+  };
+
+  const handleTextColor4 = (e) => {
+    setTextColor4(textColor4 === "#000000" ? "#ef443a" : "#000000");
+  };
+
+  const handleTextColor5 = (e) => {
+    setTextColor5(textColor5 === "#000000" ? "#ef443a" : "#000000");
+  };
+
+  const handleTextColor6 = (e) => {
+    setTextColor6(textColor6 === "#000000" ? "#ef443a" : "#000000");
+  };
+
+  const handleTextColor7 = (e) => {
+    setTextColor7(textColor7 === "#000000" ? "#ef443a" : "#000000");
+  };
+
+  const handleTextColor8 = (e) => {
+    setTextColor8(textColor8 === "#000000" ? "#ef443a" : "#000000");
+  };
+
+  const handleTextColor9 = (e) => {
+    setTextColor9(textColor9 === "#000000" ? "#ef443a" : "#000000");
   };
   return (
     <>
@@ -56,7 +91,7 @@ export default function Cheetsheet() {
                     onClick={handleTextColor}
                   >
                     <span
-                      className="text-md font-semibold text-brand"
+                      className="text-lg font-semibold text-brand"
                       style={{ color: textColor }}
                     >
                       Key Highlight
@@ -100,7 +135,7 @@ export default function Cheetsheet() {
                     onClick={handleTextColor1}
                   >
                     <span
-                      className="text-md font-semibold text-brand"
+                      className="text-lg font-semibold text-brand"
                       style={{ color: textColor1 }}
                     >
                       Note
@@ -141,17 +176,17 @@ export default function Cheetsheet() {
                 <DisclosureButton
                   class="flex items-center justify-between w-full group mb-1"
                   aria-expanded="false"
-                  onClick={handleTextColor1}
+                  onClick={handleTextColor2}
                 >
                   <span
-                    className="text-md font-semibold text-brand"
-                    style={{ color: textColor1 }}
+                    className="text-lg font-semibold text-brand"
+                    style={{ color: textColor2 }}
                   >
                     Day1: Basic
                   </span>
                   <ChevronDownIcon
                     className="size-5 fill-gray/60 group-data-[hover]:fill-gray/50 group-data-[open]:rotate-180 border-2 rounded border-emerald-400"
-                    style={{ color: textColor }}
+                    style={{ color: textColor2 }}
                   />
                 </DisclosureButton>
                 <DisclosurePanel className="text-lg text-gray-700 false border-amber-700 text-justify">
@@ -173,7 +208,9 @@ export default function Cheetsheet() {
                               <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
                                 Note
                               </th>
-                              <th class="uppercase w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tr rounded-br">Status</th>
+                              <th class="uppercase w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tr rounded-br">
+                                Status
+                              </th>
                             </tr>
                           </thead>
                           <tbody>
@@ -255,109 +292,222 @@ export default function Cheetsheet() {
                 <DisclosureButton
                   class="flex items-center justify-between w-full group mb-1"
                   aria-expanded="false"
-                  onClick={handleTextColor1}
+                  onClick={handleTextColor3}
                 >
                   <span
-                    className="text-md font-semibold text-brand"
-                    style={{ color: textColor1 }}
+                    className="text-lg font-semibold text-brand"
+                    style={{ color: textColor3 }}
                   >
-                    Day2: Basic
+                    Day2: ReactJs CheatSheet(Basic)
                   </span>
                   <ChevronDownIcon
                     className="size-5 fill-gray/60 group-data-[hover]:fill-gray/50 group-data-[open]:rotate-180 border-2 rounded border-emerald-400"
-                    style={{ color: textColor }}
+                    style={{ color: textColor3 }}
                   />
                 </DisclosureButton>
+                
                 <DisclosurePanel className="text-lg text-gray-700 false border-amber-700 text-justify">
-                <section class="text-gray-600 body-font">
-                    <div class="container px-5 py-19 mt-3 mx-auto">
-                      <div class="lg:w-3/3 w-full mx-auto overflow-auto">
-                        <table class="table-auto w-full text-left whitespace-no-wrap">
-                          <thead>
-                            <tr>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tl rounded-bl">
-                                Problem
-                              </th>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
-                                Article
-                              </th>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
-                                YOuTube
-                              </th>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
-                                Note
-                              </th>
-                              <th class="uppercase w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tr rounded-br">Status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="px-4 py-3">Start</td>
-                              <td class="px-4 py-3">5 Mb/s</td>
-                              <td class="px-4 py-3">15 GB</td>
-                              <td class="px-4 py-3 text-lg text-gray-900">
-                                Free
-                              </td>
-                              <td class="w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                Pro
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                25 Mb/s
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                25 GB
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                                $24
-                              </td>
-                              <td class="border-t-2 border-gray-200 w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                Business
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                36 Mb/s
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                40 GB
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                                $50
-                              </td>
-                              <td class="border-t-2 border-gray-200 w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                                Exclusive
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                                48 Mb/s
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                                120 GB
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                                $72
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </section>
+                <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      1. JavaScript XML (JSX)
+                </h2>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`// JSX Elements
+let element <h1>Hello, world!</h1>; 
+let emptyHeading = <h1>;
+// JSX Expressions
+let name='Pawan Jha';
+let element = <h1>Hello, {name}</h1>;
+function fullName(firstName, lastName) { 
+  return firstName + ' ' + lastName; 
+}
+let element = <h1>Hello, {fullName('John', 'Doe')}</h1>
+// JSX Attributes
+const element = <img src={user.avatarUrl} />;
+const element = <button className="btn">Click me</button>;
+// JSX functions
+name() {
+  return "Rahul";
+}
+return (
+  <h1> Hi {name()}! </h1> 
+)`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      2. Functional Components
+                </h2>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`import React from "react";
+// simple functional component 
+export default function UserProfile() {
+  return (
+    <div className="UserProfile"> 
+      <div>Hello</div> 
+      <div>World</div> 
+    </div> 
+  );
+}
+// functional component with props
+export default function Hello(props) {
+  function fullName() {
+    return {props.firstName} {props.lastName}; 
+  }
+  return (
+    <p>
+      {fullName()}
+    </p> 
+  );
+}
+// props
+<Hello firstName "Matt" lastName="Delac" />`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      3. Embed Components
+                </h2>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`// Embed internal components
+import React from 'react';
+import UserAvatar from "./UserAvatar";
+export default function UserProfile() {
+   return (
+    <div className="UserProfile"> 
+      <UserAvatar /> 
+      <UserAvatar/> 
+    </div>
+   );
+}
+// Embed external components
+import React from 'react';
+import ComponentName from 'component-name';
+export default function UserProfile() {
+  return (
+   <div className="UserProfile"> 
+    <ComponentName />
+   </div>
+  );
+}`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      4. CSS In a React
+                </h2>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`import React from "react"; 
+import "./Student.css";
+export default function Student() { 
+  return (
+    <div className="Student">Pawan Jha</div>
+  )
+}`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      5. React State
+                </h2>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`import React, { useState } from "react";
+export default function Hello(props) {
+  let [name, setName] = useState("Pawan");
+  function updateName() {
+     let newName = prompt("What is your name?"); 
+     setName(newName);
+  }
+  return (
+    <div>
+       <h1>{name}</h1>
+       <button onClick={updateName}>Update name</button>
+    </div>
+  );`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      6. React Forms
+                </h2>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`import React, { useState } from "react";
+export default function LoginForm() { 
+  let [username, setUsername] =  useState("");
+  let [password, setPassword] = useState("");
+  function handleSubmit(event) {
+    event.preventDefault();
+    alert('Loging in with {username} and {password}');
+  }
+  function updateUsername(event){ 
+    setUsername(event.target.value); 
+  }
+  function updatePassword(event) { 
+    setPassword(event.target.value);
+  }
+  return (
+    <form onsubmit={handleSubmit}>
+      <input type="text" placeholder="Username" onChange={updateUsername} />
+      <input type="password" placeholder="Password" onChange={updatePassword} />
+      <input type="submit" value="Login" />
+    </form>
+  );
+}`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      7. Map Elements
+                </h2>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`let elements = [{
+name: 'one', value: 1},
+name: 'two', value: 2 },
+name: 'three', value: 3 }]
+return ( 
+<ul>
+  {elements.map(function(element, index) {
+    return <li key = {index}>The value for (element.name) is (element.value)</li> 
+  })}
+</ul>
+);`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
                 </DisclosurePanel>
               </Disclosure>
             </div>
@@ -369,109 +519,127 @@ export default function Cheetsheet() {
                 <DisclosureButton
                   class="flex items-center justify-between w-full group mb-1"
                   aria-expanded="false"
-                  onClick={handleTextColor1}
+                  onClick={handleTextColor4}
                 >
                   <span
-                    className="text-md font-semibold text-brand"
-                    style={{ color: textColor1 }}
+                    className="text-lg font-semibold text-brand"
+                    style={{ color: textColor4 }}
                   >
-                    Day3: Basic
+                    Day3: ReactJs CheatSheet(II)
                   </span>
                   <ChevronDownIcon
                     className="size-5 fill-gray/60 group-data-[hover]:fill-gray/50 group-data-[open]:rotate-180 border-2 rounded border-emerald-400"
-                    style={{ color: textColor }}
+                    style={{ color: textColor4 }}
                   />
                 </DisclosureButton>
                 <DisclosurePanel className="text-lg text-gray-700 false border-amber-700 text-justify">
-                <section class="text-gray-600 body-font">
-                    <div class="container px-5 py-19 mt-3 mx-auto">
-                      <div class="lg:w-3/3 w-full mx-auto overflow-auto">
-                        <table class="table-auto w-full text-left whitespace-no-wrap">
-                          <thead>
-                            <tr>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tl rounded-bl">
-                                Problem
-                              </th>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
-                                Article
-                              </th>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
-                                YOuTube
-                              </th>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
-                                Note
-                              </th>
-                              <th class="uppercase w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tr rounded-br">Status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="px-4 py-3">Start</td>
-                              <td class="px-4 py-3">5 Mb/s</td>
-                              <td class="px-4 py-3">15 GB</td>
-                              <td class="px-4 py-3 text-lg text-gray-900">
-                                Free
-                              </td>
-                              <td class="w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                Pro
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                25 Mb/s
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                25 GB
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                                $24
-                              </td>
-                              <td class="border-t-2 border-gray-200 w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                Business
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                36 Mb/s
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                40 GB
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                                $50
-                              </td>
-                              <td class="border-t-2 border-gray-200 w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                                Exclusive
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                                48 Mb/s
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                                120 GB
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                                $72
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </section>
+                <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      1. Components and Hooks
+                </h2>
+                <p className="leading-relaxed">Use functional components and hooks (like useState and useEffect) for a more concise and modular code structure.</p>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`import React, { useState, useEffect } from 'react';
+const MyComponent = () → { 
+  const [count, setCount] useState(0);
+  useEffect(() { 
+    // Effect logic.... 
+  }, [count]);
+  return <div>{count}</div>;
+}`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      2. Conditional Rendering
+                </h2>
+                <p className="leading-relaxed">Render different components or elements based on conditions using the ternary operator.</p>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`const MyComponent = ({ isloggedIn )) => { 
+  return (
+    <>
+      <Nav />
+      {isLoggedIn ? <UserDashboard > : <LoginScreen />}
+    </>
+  );
+};`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      3. Controlled Components
+                </h2>
+                <p className="leading-relaxed">Use controlled components to handle user input and maintain the input's state within the component.</p>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`import React, {useState} from 'react';
+const InputForm = () => {
+    const [value, setValue] = useState('');
+    const handleChange = (event) => { 
+      setValue(event.target.value);
+    };
+    return ( 
+      <input type="text" value=(value) onChange={handleChange} /> 
+    ); 
+  }`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      4. Mapping Data
+                </h2>
+                <p className="leading-relaxed">Map an array of data to JSX elements to dynamically render a list of items.</p>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`const MyList = ({ items }) ⇒ {
+return ( 
+  <ul> 
+  {
+    items.map((item, index) ⇒ ( 
+      <li key={index}>{item}</li> 
+    ))
+  } 
+  </ul> 
+); };`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                      5. Using Fragments
+                </h2>
+                <p className="leading-relaxed">Use React Fragments to avoid adding unnecessary wrapping elements when rendering multiple elements.</p>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`const MyComponent = () ⇒ {
+return (
+  <h1>Title</h1>
+  <p>Paragraph 1</p>
+  <p>Paragraph 2</p>
+ );
+};`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
                 </DisclosurePanel>
               </Disclosure>
             </div>
@@ -483,21 +651,21 @@ export default function Cheetsheet() {
                 <DisclosureButton
                   class="flex items-center justify-between w-full group mb-1"
                   aria-expanded="false"
-                  onClick={handleTextColor1}
+                  onClick={handleTextColor5}
                 >
                   <span
                     className="text-md font-semibold text-brand"
-                    style={{ color: textColor1 }}
+                    style={{ color: textColor5 }}
                   >
                     Day4: Basic
                   </span>
                   <ChevronDownIcon
                     className="size-5 fill-gray/60 group-data-[hover]:fill-gray/50 group-data-[open]:rotate-180 border-2 rounded border-emerald-400"
-                    style={{ color: textColor }}
+                    style={{ color: textColor5 }}
                   />
                 </DisclosureButton>
                 <DisclosurePanel className="text-lg text-gray-700 false border-amber-700 text-justify">
-                <section class="text-gray-600 body-font">
+                  <section class="text-gray-600 body-font">
                     <div class="container px-5 py-19 mt-3 mx-auto">
                       <div class="lg:w-3/3 w-full mx-auto overflow-auto">
                         <table class="table-auto w-full text-left whitespace-no-wrap">
@@ -515,7 +683,9 @@ export default function Cheetsheet() {
                               <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
                                 Note
                               </th>
-                              <th class="uppercase w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tr rounded-br">Status</th>
+                              <th class="uppercase w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tr rounded-br">
+                                Status
+                              </th>
                             </tr>
                           </thead>
                           <tbody>
@@ -597,109 +767,35 @@ export default function Cheetsheet() {
                 <DisclosureButton
                   class="flex items-center justify-between w-full group mb-1"
                   aria-expanded="false"
-                  onClick={handleTextColor1}
+                  onClick={handleTextColor6}
                 >
                   <span
                     className="text-md font-semibold text-brand"
-                    style={{ color: textColor1 }}
+                    style={{ color: textColor6 }}
                   >
                     Day5: Basic
                   </span>
                   <ChevronDownIcon
                     className="size-5 fill-gray/60 group-data-[hover]:fill-gray/50 group-data-[open]:rotate-180 border-2 rounded border-emerald-400"
-                    style={{ color: textColor }}
+                    style={{ color: textColor6 }}
                   />
                 </DisclosureButton>
                 <DisclosurePanel className="text-lg text-gray-700 false border-amber-700 text-justify">
-                <section class="text-gray-600 body-font">
-                    <div class="container px-5 py-19 mt-3 mx-auto">
-                      <div class="lg:w-3/3 w-full mx-auto overflow-auto">
-                        <table class="table-auto w-full text-left whitespace-no-wrap">
-                          <thead>
-                            <tr>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tl rounded-bl">
-                                Problem
-                              </th>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
-                                Article
-                              </th>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
-                                YOuTube
-                              </th>
-                              <th class="uppercase px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300">
-                                Note
-                              </th>
-                              <th class="uppercase w-10 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tr rounded-br">Status</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="px-4 py-3">Start</td>
-                              <td class="px-4 py-3">5 Mb/s</td>
-                              <td class="px-4 py-3">15 GB</td>
-                              <td class="px-4 py-3 text-lg text-gray-900">
-                                Free
-                              </td>
-                              <td class="w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                Pro
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                25 Mb/s
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                25 GB
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                                $24
-                              </td>
-                              <td class="border-t-2 border-gray-200 w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                Business
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                36 Mb/s
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3">
-                                40 GB
-                              </td>
-                              <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                                $50
-                              </td>
-                              <td class="border-t-2 border-gray-200 w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                                Exclusive
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                                48 Mb/s
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3">
-                                120 GB
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900">
-                                $72
-                              </td>
-                              <td class="border-t-2 border-b-2 border-gray-200 w-10 text-center">
-                                <input name="plan" type="checkbox" />
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </section>
+                  <div className="font-amaranth text-sm">
+                    <CodeBlock
+                      text={`function toBe() {
+if (Math.random() < 0.5) {
+  return true;
+} else {
+  return false;
+}
+}`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
                 </DisclosurePanel>
               </Disclosure>
             </div>
@@ -711,17 +807,17 @@ export default function Cheetsheet() {
                 <DisclosureButton
                   class="flex items-center justify-between w-full group mb-1"
                   aria-expanded="false"
-                  onClick={handleTextColor1}
+                  onClick={handleTextColor7}
                 >
                   <span
                     className="text-md font-semibold text-brand"
-                    style={{ color: textColor1 }}
+                    style={{ color: textColor7}}
                   >
                     Day6: Basic
                   </span>
                   <ChevronDownIcon
                     className="size-5 fill-gray/60 group-data-[hover]:fill-gray/50 group-data-[open]:rotate-180 border-2 rounded border-emerald-400"
-                    style={{ color: textColor }}
+                    style={{ color: textColor7 }}
                   />
                 </DisclosureButton>
                 <DisclosurePanel className="text-lg text-gray-700 false border-amber-700 text-justify">
@@ -751,17 +847,17 @@ export default function Cheetsheet() {
                 <DisclosureButton
                   class="flex items-center justify-between w-full group mb-1"
                   aria-expanded="false"
-                  onClick={handleTextColor1}
+                  onClick={handleTextColor8}
                 >
                   <span
                     className="text-md font-semibold text-brand"
-                    style={{ color: textColor1 }}
+                    style={{ color: textColor8 }}
                   >
                     Day7: Basic
                   </span>
                   <ChevronDownIcon
                     className="size-5 fill-gray/60 group-data-[hover]:fill-gray/50 group-data-[open]:rotate-180 border-2 rounded border-emerald-400"
-                    style={{ color: textColor }}
+                    style={{ color: textColor8 }}
                   />
                 </DisclosureButton>
                 <DisclosurePanel className="text-lg text-gray-700 false border-amber-700 text-justify">
@@ -791,17 +887,17 @@ export default function Cheetsheet() {
                 <DisclosureButton
                   class="flex items-center justify-between w-full group mb-1"
                   aria-expanded="false"
-                  onClick={handleTextColor1}
+                  onClick={handleTextColor9}
                 >
                   <span
                     className="text-md font-semibold text-brand"
-                    style={{ color: textColor1 }}
+                    style={{ color: textColor9 }}
                   >
                     Day8: Basic
                   </span>
                   <ChevronDownIcon
                     className="size-5 fill-gray/60 group-data-[hover]:fill-gray/50 group-data-[open]:rotate-180 border-2 rounded border-emerald-400"
-                    style={{ color: textColor }}
+                    style={{ color: textColor9 }}
                   />
                 </DisclosureButton>
                 <DisclosurePanel className="text-lg text-gray-700 false border-amber-700 text-justify">
