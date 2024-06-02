@@ -9,6 +9,8 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 
 import { CodeBlock, dracula } from "react-code-blocks";
 
+import envImg from "../assests/env img.png";
+
 export default function Cheetsheet() {
   const [textColor, setTextColor] = useState("#000000");
   const [textColor1, setTextColor1] = useState("#000000");
@@ -105,22 +107,14 @@ export default function Cheetsheet() {
                     {/* <div className="flex flex-col text-lg space-y-4 p-4">
                     <div className="flex flex-col items-start gap-y-1"> */}
                     <li>
-                      Teaches you problem solving by diving deep into DSA, with
-                      450+ modules.
+                    JSX Syntax: Write HTML-like syntax within JavaScript.Use curly braces {} to embed JavaScript expressions.
                     </li>
                     <li>
-                      In-depth video solutions covering brute, better, optimal
-                      solutions.
+                    Components: Function Components, Class Components
                     </li>
-                    <li>Well structured articles/notes for quick revision.</li>
-                    <li>C++, Java, Python, and Javascript code.</li>
-                    <li>Company tags associated with each problem.</li>
-                    <li>
-                      Notes section to save your notes for quick revision.
-                    </li>
-                    <li>
-                      Notes section to save your notes for quick revision.
-                    </li>
+                    <li>Lifecycle Methods (Class Components)</li>
+                    <li>Hooks (Function Components): useEffect, useContext</li>
+                    <li>Conditional Rendering: Use ternary operators or logical && for conditionally rendering elements</li>
                   </DisclosurePanel>
                 </Disclosure>
               </div>
@@ -851,17 +845,20 @@ export default App;`}
                   </h2>
                   <p className="leading-relaxed text-justify">
                     An alternative to useState. Accepts a reducer of type
-                    <span className="text-[#ef443a]"> (state, action) = newState</span>, and returns the current state
-                    paired with a dispatch method. 
-                    <br/>
-                    Example: It is particularly
-                    useful when the state logic is complex and involves multiple
-                    sub-values, or when the next state depends on the previous
-                    one. useReducer is an alternative to useState. While
-                    useState is great for handling independent pieces of state,
-                    useReducer excels at handling more complex, interconnected
-                    state that involves multiple changes in an atomic and
-                    predictable manner.
+                    <span className="text-[#ef443a]">
+                      {" "}
+                      (state, action) = newState
+                    </span>
+                    , and returns the current state paired with a dispatch
+                    method.
+                    <br />
+                    Example: It is particularly useful when the state logic is
+                    complex and involves multiple sub-values, or when the next
+                    state depends on the previous one. useReducer is an
+                    alternative to useState. While useState is great for
+                    handling independent pieces of state, useReducer excels at
+                    handling more complex, interconnected state that involves
+                    multiple changes in an atomic and predictable manner.
                   </p>
                   <div className="font-mono text-sm ">
                     <CodeBlock
@@ -1002,10 +999,10 @@ function Counter() {
                   onClick={handleTextColor6}
                 >
                   <span
-                    className="text-md font-semibold text-brand"
+                    className="text-lg font-semibold text-brand"
                     style={{ color: textColor6 }}
                   >
-                    Day5: Basic
+                    Day5: React .env File Usage
                   </span>
                   <ChevronDownIcon
                     className="size-5 fill-gray/60 group-data-[hover]:fill-gray/50 group-data-[open]:rotate-180 border-2 rounded border-emerald-400"
@@ -1013,15 +1010,119 @@ function Counter() {
                   />
                 </DisclosureButton>
                 <DisclosurePanel className="text-lg text-gray-700 false border-amber-700 text-justify">
-                  <div className="font-amaranth text-sm">
+                  <h2 class="text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                    1. .env File Usage
+                  </h2>
+                  <p className="leading-relaxed text-justify">
+                    The <span className="text-[#ef443a]">.env</span> file is
+                    commonly used to store environment variables. These
+                    variables are configuration values that can be used to
+                    customize the behaviour of your application depending on the
+                    environment it’s running in (e.g., development, production,
+                    keys, etc.). React applications often use environment
+                    variables to store sensitive information or configuration
+                    settings.
+                  </p>
+
+                  <h2 class="mt-3 text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                    2. Create an .env file
+                  </h2>
+                  <div className="flex">
+                    <img
+                      className="size-28 float-left rounded-lg"
+                      src={envImg}
+                    />
+                    <p className="leading-relaxed text-justify">
+                      In the root of your React project, create a file named{" "}
+                      <span className="text-[#ef443a]">.env</span>, you can also
+                      have specific environment files like{" "}
+                      <span className="text-[#ef443a]">.env.development</span>{" "}
+                      and
+                      <span className="text-[#ef443a]"> .env.production</span>,
+                      etc., to manage different configurations for different
+                      environments.
+                    </p>
+                  </div>
+
+                  <h2 class="mt-3 text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                    3. Add Variable
+                  </h2>
+                  <p className="leading-relaxed">
+                    Inside the <span className="text-[#ef443a]">.env</span>{" "}
+                    file, you can define variables like this:
+                  </p>
+                  <div className="font-mono text-sm">
                     <CodeBlock
-                      text={`function toBe() {
-if (Math.random() < 0.5) {
-  return true;
-} else {
-  return false;
-}
-}`}
+                      text={`// With VITE
+VITE_API_KEY = your_api_key
+VITE_API_URL = https://api.example.com
+// With Create React App
+REACT_APP_API_KEY = your_api_key
+REACT_APP_API_URL = https://api.example.com`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+                  <p className="leading-relaxed text-justify">
+                    <span className="text-[#ef443a]">Note </span>
+                    that variable names must start with{" "}
+                    <span className="text-[#ef443a]">REACT_APP_ </span>to be
+                    recognized by Create React App &{" "}
+                    <span className="text-[#ef443a]">VITE_ </span>by Vite. This
+                    prefix is a safety feature to avoid accidentally exposing
+                    private keys.
+                  </p>
+
+                  <h2 class="mt-3 text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                    4. Access the variables
+                  </h2>
+                  <p className="leading-relaxed text-justify">
+                    In your React components or other parts of your code, you
+                    can access these variables like this:
+                  </p>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`// With VITE
+const apiKey = import.meta.env.VITE_API_KEY;
+const apiUrl = import.meta.env.VITE_API_URL;       
+// With Create React App
+const apiKey = process.env.REACT_APP_API_KEY;
+const apiUrl = process.env.REACT_APP_API_URL;`}
+                      showLineNumbers
+                      codeBlock
+                      language="javascript"
+                      theme={dracula}
+                    />
+                  </div>
+                  <p className="leading-relaxed text-justify">
+                    Remember that these values are available at build time, so
+                    if you change them, you'll need to restart your development
+                    server or rebuild your application.
+                  </p>
+
+                  <h2 class="mt-3 text-md  text-gray-900 title-font font-bold mb-2 font-amaranth ">
+                    5. Use variables in configuration files
+                  </h2>
+                  <div className="font-mono text-sm">
+                    <CodeBlock
+                      text={`const apiKey = import.meta.env.VITE_API_KEY;
+const apiUrl = import.meta.env.VITE_API_URL;
+const fetchData = async () => {
+  const response = await fetch(apiUrl, {
+    headers: {
+      "Authorization": Bearer {apiKey},
+      "Content-Type": "application/json"
+    }
+  });
+  if (response.ok) {
+    console.log(await response.json());
+  } else {
+    console.error(Error {response.status});
+  }
+};
+export default fetchData;`}
                       showLineNumbers
                       codeBlock
                       language="javascript"
