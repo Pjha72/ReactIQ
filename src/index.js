@@ -15,6 +15,7 @@ import ForgetPassword from "./components/ForgetPassword.js"
 import Problem from './components/Problem.js';
 import Home from "./components/Home.js"
 import CheatSheet from "./components/Cheetsheet.js"
+import Interview from "./components/Interview.js"
 import './assests/css/FontCss.css'
 
 
@@ -72,6 +73,10 @@ const appRoute = createBrowserRouter([
       {
         path: "/cheatsheet",
         element: <CheatSheet />
+      },
+      {
+        path: "/interview",
+        element: <Interview />
       }
     ]
   }

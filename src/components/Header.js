@@ -40,7 +40,7 @@ const Header = () => {
     { name: "Problems", href: "/problems", current: false },
     { name: "Contest", href: "#", current: false },
     { name: "Discuss", href: "#", current: false },
-    { name: "Interview", href: "#", current: false },
+    { name: "Interview", href: "/interview", current: false },
     { name: "CheatSheet", href: "/cheatsheet", current: false },
     { name: "Roadmap", href: "/roadmap", current: false },
   ];
